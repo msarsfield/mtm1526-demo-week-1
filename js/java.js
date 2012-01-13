@@ -1,53 +1,26 @@
-// Javascript single line comment
-/*
-Javascript multin-line comments
+//Mary Sarsfield - January 13, 2012
+//MTM1526-Homework-1 - Letter Looper
+//Javascript - Creating user input field + loops + change action after a "while" 
 
-// JavaScript Document
-*/
 
-alert('This is an alert.');
+var result;
 
-// prompt() is for user input, has a text field for the user to enter some text
+while (!result){
+	result = prompt('Please enter the first letter of you last name.'); 
+}//Hi Thomas.  What code would I use at this point to enable the "cancel" button on the prompt (var x page if the user does not wish to enter the info?
 
-var name;
-
-while (!name){
-	name = prompt('What is your name?'); // if you want to collect the name, you have to create a variable as we do in action script
-}
-// in javascipt, a trqce is called console.log.  It writes out the content of a variable for debugging
-
-console.log(name); //to see the trace you have to go to firebug
-
-//document where all the html is located
-
-document.write('Hello, '+ name);
-
-// window which allows you to get at the URL bar the backbutton.  The +  operator is for combining sctrings and together
-
-for (var i = 1; i < 5; i++) {
-	document.write ('<br>' + i)
-	document.write('<h1>' + i + '</h1>');
+for (var a = 1; a <11; a++) {
 	
+	var z = 0; 
+	
+while (z != a){
+	document.write (result);
+	z = z+1;
+}
+	document.write(result,'<br>');
 }
 
-//creaing a funtion in js.  funciton declaration and some other name (maybe funciton assignment - this is a more versatile way by including it in a new variable)
-
-function isNameCool(){
-	var name = prompt('What is your name?');
-	
-	if (name =='Thomas') {
-			document.write ('That is an awesome name!');
-	} else {
-			document.write("I don't like your name.");	
-	}
-}
-isNameCool();
-
-var writeNameMultipleTimes = function (){
-	for (var i = 1; i <11; i++)
-	document.write('<strong>Thomas</strong><br>');
-	
-};// you should always put a colon after the left curley brace when creating a variable via function assighment
-
-//validator is jshint.com
+//{
+////	document.write ('Holly Cow Thomas... That only took me 2 1/2 hours!'); I had initially put my comments on the Javascript page, and then tested simply adding it to the index page.  I was able to add line breaks by using the index page whereas I was having trouble doing it in the as file.
+//}
 
